@@ -1,8 +1,4 @@
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 400px;
   width: 100%;
   padding: 0 1.5em;
@@ -12,6 +8,9 @@ header {
   background-repeat: repeat;
 }
 
-.your-name {
-  text-align: center;
+header .avatar-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
