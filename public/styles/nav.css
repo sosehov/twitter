@@ -10,21 +10,27 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-nav.left span{
+
+nav .nav-title {
   font-family: "Bungee", sans-serif;
   font-size: 36px;
   font-weight: 600;
 }
 
-nav.right {
+nav .button-text {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  font-family: "Bungee", sans-serif;
+  align-items: center;
+  justify-content: space-between;
   padding: 0 1.5em;
   font-size: 24px;
 }
 
-nav .right span {
+nav .button-text span {
   margin-bottom: 10px;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+nav .button-text i.fa-solid.fa-angles-down {
+  color: red;
 }
