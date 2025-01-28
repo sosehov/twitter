@@ -8,7 +8,7 @@ $(document).ready(function() {
     // Find the counter relative to the textarea
     const $counter = $(this).closest('.new-tweet').find('.counter');
 
-    // Update the counter
+    // Set the text content of counter element
     $counter.text(remainingLength);
 
     // Check if remaining length is negative
