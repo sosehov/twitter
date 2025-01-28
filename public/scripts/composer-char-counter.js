@@ -17,5 +17,5 @@ $(document).ready(function() {
     } else {
       $counter.removeClass('over-limit');
     }
-    });
   });
+});
