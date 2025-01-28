@@ -28,3 +28,7 @@
   text-transform: uppercase;
   padding: 8px; 
 }
+
+.tweet-form div.container-submit .over-limit {
+  color: red;
+}
