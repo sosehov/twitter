@@ -1,22 +1,26 @@
-form {
+.tweet-form {
   display: flex;
   flex-direction: column;
 }
 
-form textarea {
+.tweet-form textarea {
   resize: none;
   border: none;
   border-bottom: 2px solid black;
   margin-bottom: 16px;
 }
 
-form div.container-submit {
+.tweet-label {
+  display: none;
+}
+
+.tweet-form div.container-submit {
   display: flex;
   justify-content: space-between;
   font-family: "Bungee", sans-serif;
 }
 
-form button[type="submit"] {
+.tweet-form button[type="submit"] {
   border: 0;
   background-color: #4056A1;
   color: white;
