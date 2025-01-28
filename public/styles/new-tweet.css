@@ -1,0 +1,26 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form textarea {
+  resize: none;
+  border: none;
+  border-bottom: 2px solid black;
+  margin-bottom: 16px;
+}
+
+form div.container-submit {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Bungee", sans-serif;
+}
+
+form button[type="submit"] {
+  border: 0;
+  background-color: #4056A1;
+  color: white;
+  font-family: "Bungee", sans-serif;
+  text-transform: uppercase;
+  padding: 8px; 
+}
