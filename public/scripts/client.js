@@ -88,7 +88,16 @@ const data = [
 
     // get the info from the form
     const data = $submitTweetButton.serialize();
-    console.log(data);
+
+    // Post the form data to the server
+    $.ajax({
+      method: 'POST',
+      url: '/tweets',
+      data: data,
+      success: () => {
+        console.log('The tweet has been posted to the server');
+      }
+    });
   });
 
 });
