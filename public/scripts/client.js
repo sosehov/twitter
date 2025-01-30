@@ -44,14 +44,14 @@ const data = [
       <article class="tweet">
         <header class="tweet-header">
           <br/>
-          <img src="${user.avatars} alt="User's profile picture">
-          <h3>${user.name}</h3>
-          <h3>${user.handle}</h3>
+          <img src="${tweet.user.avatars} alt="User's profile picture">
+          <h3>${tweet.user.name}</h3>
+          <h3>${tweet.user.handle}</h3>
         </header>
-          <p>${content.text}</p>
+          <p>${tweet.content.text}</p>
           <hr/>
           <footer>
-            <h5>${created_at}</h5>
+            <h5>${tweet.created_at}</h5>
             <span class="clickable-icon">
               <i class="fa-solid fa-flag"></i>
               <i class="fa-solid fa-retweet"></i>
