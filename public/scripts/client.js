@@ -30,16 +30,9 @@ const data = [
     },
     "created_at": 1461113959088
   }
-]
+];
 
-  const renderTweets = function(tweets) {
-    for(const tweet of tweets) {
-      const $tweet = createTweetElement(tweet);
-      $('#tweets-container').prepend($tweet); 
-    }
-  }
-
-  const createTweetElement = function(tweet) {
+  const createTweetElement = function() {
     let tweet = $(`
       <article class="tweet">
         <header class="tweet-header">
@@ -64,6 +57,38 @@ const data = [
     return $tweet;
   };
 
-  renderTweets(data);
+  // Grab the twitter container from the webpage
+  const $tweetsContainer = $('#tweets-container');
+
+  const renderTweets = function(tweets) {
+    for(const tweet of tweets) {
+      const $tweet = createTweetElement(tweet);
+      $tweetsContainer.prepend($tweet); 
+    }
+  }
+
+  const loadTweets = () => {
+    // Make a GET request for the tweet data from the server
+    $.ajax({
+      method: 'GET',
+      url: '/tweets',
+      success: (data) => {
+        renderTweets(data);
+      }
+    });
+  };
+
+  loadTweets();
+
+  // Grab the button from the HTML
+  const $submitTweetButton = $('.container-submit button');
+
+  $submitTweetButton.on("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    // get the info from the form
+    const data = $submitTweetButton.serialize();
+    console.log(data);
+  });
 
 });
