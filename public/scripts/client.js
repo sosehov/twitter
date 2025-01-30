@@ -7,7 +7,7 @@
 $(document).ready(()=> {
 
   const createTweetElement = function(tweet) {
-    let tweet = $(`
+    let tweetElement = $(`
       <article class="tweet">
         <header class="tweet-header">
           <br/>
@@ -28,7 +28,7 @@ $(document).ready(()=> {
         </article>
     `);
 
-    return tweet;
+    return tweetElement;
   };
 
   // Grab the twitter container from the webpage
