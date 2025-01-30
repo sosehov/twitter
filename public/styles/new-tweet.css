@@ -21,6 +21,7 @@
 }
 
 .tweet-form button[type="submit"] {
+  cursor: pointer;
   border: 0;
   background-color: #4056A1;
   color: white;
