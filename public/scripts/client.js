@@ -5,8 +5,8 @@
  */
 
 $(document).ready(()=> {
-
   const createTweetElement = function(tweet) {
+
     let tweetElement = $(`
       <article class="tweet">
         <header class="tweet-header">
@@ -18,7 +18,7 @@ $(document).ready(()=> {
           <p>${tweet.content.text}</p>
           <hr/>
           <footer>
-            <h5>${tweet.created_at}</h5>
+            <h5>${timeago.format(tweet.created_at)}</h5>
             <span class="clickable-icon">
               <i class="fa-solid fa-flag"></i>
               <i class="fa-solid fa-retweet"></i>
@@ -41,8 +41,8 @@ $(document).ready(()=> {
     }
   }
 
+  // Fetch tweets from the http://localhost:8080/tweets page
   const loadTweets = () => {
-    // Make a GET request for the tweet data from the server
     $.ajax({
       method: 'GET',
       url: '/tweets',
@@ -55,13 +55,13 @@ $(document).ready(()=> {
   loadTweets();
 
   // Grab the button from the HTML
-  const $submitTweetButton = $('.container-submit button');
+  const $tweetForm = $('.tweet-form');
 
-  $submitTweetButton.on("submit", function(event) {
+  $tweetForm.on("submit", function(event) {
     event.preventDefault(); // Prevent the form from submitting
 
     // get the info from the form
-    const data = $submitTweetButton.serialize();
+    const data = $tweetForm.serialize();
 
     // Post the form data to the server
     $.ajax({
