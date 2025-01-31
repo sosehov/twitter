@@ -69,7 +69,8 @@ $(document).ready(()=> {
       url: '/tweets',
       data: data,
       success: () => {
-        console.log('The tweet has been posted to the server');
+        $tweetForm[0].reset();
+        loadTweets();
       }
     });
   });
