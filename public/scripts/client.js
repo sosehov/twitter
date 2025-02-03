@@ -55,10 +55,9 @@ $(document).ready(()=> {
 
   loadTweets();
 
-  // Grab the button from the HTML
   const $tweetForm = $('.tweet-form');
 
-  $tweetForm.on("submit", function(event) {
+  $tweetForm.on('validSubmit', function(event) {
     event.preventDefault(); // Prevent the form from submitting
 
     // get the info from the form
@@ -71,7 +70,7 @@ $(document).ready(()=> {
       data: data,
       success: () => {
         $tweetForm[0].reset();
-        loadTweets();
+        loadTweets(); //Reload tweets after successful submission
       }
     });
   });
