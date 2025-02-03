@@ -6,7 +6,6 @@
 
 $(document).ready(()=> {
   const createTweetElement = function(tweet) {
-    console.log(tweet); // Log the tweet object to ensure it's correct
     // Manually escape the tweet content to avoid issues with jQuery
     const tweetText = document.createElement('div');
     tweetText.textContent = tweet.content.text;
@@ -75,7 +74,7 @@ $(document).ready(()=> {
       url: '/tweets',
       data: data,
       success: () => {
-        $tweetForm[0].reset();
+        $('#tweet-text').val('').trigger('input');
         loadTweets(); //Reload tweets after successful submission
       }
     });
