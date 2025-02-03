@@ -6,7 +6,10 @@
 
 $(document).ready(()=> {
   const createTweetElement = function(tweet) {
+    // Use .text() to escape tweet content to prevent XSS
+    const tweetText = $('<div').text(tweet.content.text).html();
 
+    // Build the tweet element with the escaped tweet text
     let tweetElement = $(`
       <article class="tweet">
         <header class="tweet-header">
@@ -15,17 +18,17 @@ $(document).ready(()=> {
           <h3>${tweet.user.name}</h3>
           <h3>${tweet.user.handle}</h3>
         </header>
-          <p>${tweet.content.text}</p>
-          <hr/>
-          <footer>
-            <h5>${timeago.format(tweet.created_at)}</h5>
-            <span class="clickable-icon">
-              <i class="fa-solid fa-flag"></i>
-              <i class="fa-solid fa-retweet"></i>
-              <i class="fa-solid fa-heart"></i>
-            </span>
-          </footer>
-        </article>
+        <p>${tweetText}</p>
+        <hr/>
+        <footer>
+          <h5>${timeago.format(tweet.created_at)}</h5>
+          <span class="clickable-icon">
+            <i class="fa-solid fa-flag"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-heart"></i>
+          </span>
+        </footer>
+      </article>
     `);
 
     return tweetElement;
@@ -36,11 +39,11 @@ $(document).ready(()=> {
 
   const renderTweets = function(tweets) {
     $tweetsContainer.empty();
-    for(const tweet of tweets) {
+    for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
-      $tweetsContainer.prepend($tweet); 
+      $tweetsContainer.prepend($tweet);
     }
-  }
+  };
 
   // Fetch tweets from the http://localhost:8080/tweets page
   const loadTweets = () => {
