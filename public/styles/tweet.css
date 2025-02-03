@@ -5,12 +5,6 @@
   padding: 10px;
 }
 
-.tweet header i.fa-circle-user {
-  margin-top: 0px;
-  margin-right: 10px;
-  padding: 10px;
-}
-
 .tweet header h3:first-of-type {
   margin-right: 10px;
   margin-left: 10px;
