@@ -1,10 +1,11 @@
 $(document).ready(function() {
   // Register the 'input' event on the textarea
-  $('.new-tweet textarea').on('input', function() {
+  $('#tweet-text').on('input', function() {
+
     const maxLength = 140;
     const currentLength = $(this).val().length;
     const remainingLength = maxLength - currentLength;
-
+    console.log(remainingLength);
     // Find the counter relative to the textarea
     const $counter = $(this).closest('.new-tweet').find('.counter');
 
