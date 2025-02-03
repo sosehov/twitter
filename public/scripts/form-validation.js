@@ -14,9 +14,9 @@ $(document).ready(function() {
       alert('Tweet can not be empty!');
     } else if (currentLength > maxLength) {
       alert('Tweet text can not exceed 140 characters!');
-      } else {
-        // If valid, trigger a custom event to submit the form
-        $(this).trigger('validSubmit');
-      }
+    } else {
+      // If valid, trigger a custom event to submit the form
+      $(this).trigger('validSubmit');
+    }
   });
 });
