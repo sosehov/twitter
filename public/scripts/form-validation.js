@@ -8,7 +8,7 @@ $(document).ready(function() {
     const currentLength = tweetText.length;
 
     // Clear any previous error messages
-    $('.error-message').remove();
+    $('.error-container').empty();
 
     // Create an error message element
     const errorMessage = $('<p class="error-message"></p>');
