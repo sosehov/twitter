@@ -10,10 +10,15 @@ $(document).ready(function() {
     // Clear any previous error messages
     $('.error-message').remove();
 
+    // Create an error message element
+    const errorMessage = $('<p class="error-message"></p>');
+
     if (!tweetText) {
-      alert('Tweet can not be empty!');
+      errorMessage.text('Tweet cannot be empty!');
+      $('.error-container').append(errorMessage);
     } else if (currentLength > maxLength) {
-      alert('Tweet text can not exceed 140 characters!');
+      errorMessage.text('Tweet cannot exceed 140 characters!');
+      $('.error-container').append(errorMessage);
     } else {
       // If valid, trigger a custom event to submit the form
       $(this).trigger('validSubmit');
