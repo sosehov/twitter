@@ -34,3 +34,12 @@ nav .button-text span {
 nav .button-text i.fa-solid.fa-angles-down {
   color: red;
 }
+
+nav .toggle-tweet-form {
+  cursor: pointer;
+  font-weight:bold;
+}
+
+nav .toggle-tweet-form:hover {
+  text-decoration: underline;
+}
