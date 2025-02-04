@@ -17,8 +17,8 @@ $(document).ready(()=> {
         <header class="tweet-header">
           <br/>
           <img src="${tweet.user.avatars}" alt="User's profile picture">
-          <h3>${tweet.user.name}</h3>
-          <h3>${tweet.user.handle}</h3>
+          <h3 class="username">${tweet.user.name}</h3>
+          <h3 class="userhandle">${tweet.user.handle}</h3>
         </header>
         <p>${escapedText}</p>
         <hr/>
