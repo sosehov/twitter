@@ -43,3 +43,7 @@ nav .toggle-tweet-form {
 nav .toggle-tweet-form:hover {
   text-decoration: underline;
 }
+
+.avatar-name .avatar-picture {
+  padding-top: 20px;
+}
