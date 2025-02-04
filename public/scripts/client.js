@@ -65,7 +65,9 @@ $(document).ready(()=> {
   $tweetForm.on('validSubmit', function(event) {
     event.preventDefault(); // Prevent the form from submitting
 
-    // get the info from the form
+    $('.error-container').hide(); // Hide the error container
+
+    // Get the info from the form
     const data = $tweetForm.serialize();
 
     // Post the form data to the server
