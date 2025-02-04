@@ -20,6 +20,15 @@
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
+  width: 100%;
+  max-width: 600 px;
+  box-sizing: border-box;
+}
+
+.tweet p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 .tweet:hover {
