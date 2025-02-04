@@ -14,7 +14,7 @@ $(document).ready(function() {
     const errorMessage = $('<p class="error-message"></p>');
 
     if (!tweetText) {
-      errorMessage.text('Tweet cannot be empty!');
+      errorMessage.text('Please enter some text to tweet!');
       $('.error-container').append(errorMessage);
     } else if (currentLength > maxLength) {
       errorMessage.text('Tweet cannot exceed 140 characters!');
