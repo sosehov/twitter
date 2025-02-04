@@ -5,6 +5,24 @@
  */
 
 $(document).ready(()=> {
+  // Handle the toggle functionality
+  $('.toggle-tweet-form').on('click', function() {
+    const $newTweetSection = $('.new-tweet');
+    const $button = $(this);
+
+    // If the form is visible, slide it up (hide it), otherwise slide it down (show it)
+    if ($newTweetSection.is(':visible')) {
+      $newTweetSection.slideUp('slow');
+
+    } else {
+      // Slide down the form
+      $newTweetSection.slideDown('slow', function() {
+        // Automatically focus the textarea once the form is revealed
+        $('#tweet-text').focus();
+      });
+    }
+  });
+
   const createTweetElement = function(tweet) {
     // Manually escape the tweet content to avoid issues with jQuery
     const tweetText = document.createElement('div');
