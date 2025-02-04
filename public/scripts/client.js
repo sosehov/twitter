@@ -74,8 +74,9 @@ $(document).ready(()=> {
       url: '/tweets',
       data: data,
       success: () => {
-        $('#tweet-text').val('').trigger('input');
         loadTweets(); //Reload tweets after successful submission
+        $('#tweet-text').val('').trigger('input');
+        $('.error-container').empty();
       }
     });
   });
