@@ -1,16 +1,16 @@
-.tweet-header{
+.tweet-header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
 }
 
-.tweet header h3:first-of-type {
+.tweet-header .username {
   margin-right: 10px;
   margin-left: 10px;
 }
 
-.tweet header h3:last-of-type {
+.tweet-header .userhandle {
   margin-left: auto;
   padding: 10px;
 }
