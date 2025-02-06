@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  
   // Register the 'input' event on the textarea
   $('#tweet-text').on('input', function() {
 

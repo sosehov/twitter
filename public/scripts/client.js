@@ -1,4 +1,5 @@
 $(document).ready(()=> {
+  
   // Handle the toggle functionality
   $('.toggle-tweet-form').on('click', function() {
     const $newTweetSection = $('.new-tweet');
