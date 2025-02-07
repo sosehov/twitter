@@ -32,7 +32,7 @@
 }
 
 .tweet:hover {
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .tweet hr {
@@ -66,4 +66,25 @@
   margin: 0;
   font-size: 16px;
   color: #555;
+}
+
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) {
+  .tweet {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+  .tweet {
+    width: 70%;
+  }
+
+  .tweet-header .username {
+    font-size: 18px;
+  }
 }

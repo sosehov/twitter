@@ -3,16 +3,13 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-html {
+
+ html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-/*
- * Global layout stuff
- */
 
 body {
   font-family: "Source Sans 3", sans-serif;
@@ -25,4 +22,22 @@ main {
   width: 90%;
   margin: 0 auto;
   background-color: inherit;
+}
+
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 768) {
+  main {
+    width: 80%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+  main {
+    width: 70%;
+    font-size: 18px;
+    margin-left: 33.3%;
+  }
 }

@@ -6,6 +6,7 @@
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   background-size: auto;
   background-repeat: repeat;
+  box-sizing: border-box;
 }
 
 .avatar-name {
@@ -13,4 +14,45 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width:100%;
+}
+
+
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) {
+  .twitter-header {
+    height: 250px;
+  }
+
+  .avatar-name {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+  .twitter-header {
+    width: 30.3%;
+    position: fixed;
+    top: 240px;
+    left: 70px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .avatar-name {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .avatar-name .avatar-picture {
+    margin-bottom: 20px;
+  }
+
 }

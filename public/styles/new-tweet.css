@@ -1,6 +1,18 @@
+.new-tweet {
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .tweet-form {
   display: flex;
   flex-direction: column;
+  margin-left: 33.3%;
+  padding: 20px;
+  width: 66.7%;
+  box-sizing: border-box;
 }
 
 .tweet-form textarea {
@@ -47,3 +59,27 @@
   border-radius: 5px;
   font-size: 14px;
 }
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) {
+  .tweet-form {
+    width: 70%; 
+    margin: 0 auto;
+  }
+
+  .tweet-form button[type="submit"] {
+    width: 150px;
+  }
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024) {
+  .new-tweet {
+    width: 66.7%;
+    line-height: 600px;
+    float: right;
+  }
+}
+

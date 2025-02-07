@@ -47,3 +47,35 @@ nav .toggle-tweet-form:hover {
 .avatar-name .avatar-picture {
   padding-top: 20px;
 }
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 1em 0;
+  }
+
+  nav .nav-title {
+    font-size: 28px; /* Adjust title size */
+  }
+
+  nav .button-text {
+    font-size: 18px;
+  }
+
+  nav .button-text i.fa-solid.fa-angles-down {
+    color: red;
+    margin-top: 10px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+  nav {
+    flex-direction: row; /* Align horizontally */
+    height: 120px;
+  }
+}
