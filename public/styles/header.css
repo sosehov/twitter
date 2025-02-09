@@ -1,4 +1,4 @@
-.twitter-header{
+.twitter-header {
   height: 400px;
   width: 100%;
   padding: 0 1.5em;
@@ -6,6 +6,16 @@
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   background-size: auto;
   background-repeat: repeat;
+}
+
+.navbar-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .toggle-tweet-form {
+  color:#FFFFFF;
 }
 
 .avatar-name {
