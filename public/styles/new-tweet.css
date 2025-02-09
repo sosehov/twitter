@@ -60,23 +60,21 @@
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .tweet-form {
     width: 75%; 
     margin: 0 auto;
   }
-
   .tweet-form button[type="submit"] {
     width: 150px;
   }
 }
 
 /* Desktop Styles */
-@media only screen and (min-width: 1024) {
-  .new-tweet {
-    width: 66.7%;
-    line-height: 600px;
-    float: right;
+@media only screen and (min-width: 1024px) {
+  .tweet-form {
+    width: 75%; 
+    margin: 0 auto;
   }
 }
 
