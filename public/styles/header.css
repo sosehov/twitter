@@ -11,11 +11,14 @@
 .avatar-name {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   width:100%;
 }
 
+.avatar-name .your-name {
+  color:#FFFFFF;
+}
 
 
 /* Tablet Styles */
@@ -25,6 +28,37 @@
     position: relative;
     top: 0;
     padding: 1em;
+    height: 400px;
+  }
+
+  header .nav-title {
+    font-family: "Bungee", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  
+  header .button-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5em;
+    font-size: 24px;
+  }
+  
+  header .button-text span {
+    margin-bottom: 10px;
+    font-family: "Source Sans 3", sans-serif;
+  }
+  
+  header .button-text i.fa-solid.fa-angles-down {
+    color: red;
+  }
+
+  .avatar-name .avatar-picture img {
+    width: 220px;
+    height: 220px;
   }
 
 }
