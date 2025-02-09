@@ -1,7 +1,7 @@
 .new-tweet {
   padding: 20px;
   margin-bottom: 20px;
-  margin-top: 80px;
+  margin-top: 50px;
   width: 100%;
   padding: 1.5em;
 }
@@ -11,7 +11,7 @@
   flex-direction: column;
   margin-left: 33.3%;
   padding: 20px;
-  width: 66.7%;
+  width: 70%;
 }
 
 .tweet-form textarea {
@@ -62,7 +62,7 @@
 /* Tablet Styles */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .tweet-form {
-    width: 75%; 
+    width: 90%; 
     margin: 0 auto;
   }
   .tweet-form button[type="submit"] {
