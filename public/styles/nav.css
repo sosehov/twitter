@@ -43,35 +43,6 @@ nav .toggle-tweet-form:hover {
   text-decoration: underline;
 }
 
-.avatar-name .avatar-picture {
-  padding-top: 20px;
-}
-
-
-/* Mobile Styles */
-@media only screen and (max-width: 420px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    padding: 1em 0;
-  }
-
-  nav .nav-title {
-    font-size: 28px;
-
-  }
-
-  nav .button-text {
-    font-size: 18px;
-  }
-
-  nav .button-text i.fa-solid.fa-angles-down {
-    color: red;
-    margin-top: 10px;
-  }
-}
-
 /* Tablet Styles */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   nav {
@@ -87,5 +58,8 @@ nav .toggle-tweet-form:hover {
   nav {
     flex-direction: row; /* Align horizontally */
     height: 120px;
+  }
+  .avatar-name .avatar-picture {
+    padding-top: 10px;
   }
 }
