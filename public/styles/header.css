@@ -36,13 +36,6 @@ header .toggle-tweet-form:hover {
   margin-top: 0px;
 }
 
-.avatar-name .avatar-picture img {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 0px;
-}
-
-
 /* Tablet Styles */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* Header takes up full width and adjusts to tablet screen */
@@ -50,7 +43,6 @@ header .toggle-tweet-form:hover {
     position: relative;
     top: 0;
     padding: 1em;
-    height: 400px;
   }
 
   header .nav-title {
