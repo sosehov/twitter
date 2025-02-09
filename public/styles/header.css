@@ -33,6 +33,13 @@ header .toggle-tweet-form:hover {
 
 .avatar-name .your-name {
   color:#FFFFFF;
+  margin-top: 0px;
+}
+
+.avatar-name .avatar-picture img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 0px;
 }
 
 
@@ -71,9 +78,14 @@ header .toggle-tweet-form:hover {
     color: red;
   }
 
+  .avatar-name .avatar-picture {
+    margin-bottom: 0px;
+  }
+
   .avatar-name .avatar-picture img {
     width: 220px;
     height: 220px;
+    margin-bottom: 0px;
   }
 
 }
@@ -95,8 +107,14 @@ header .toggle-tweet-form:hover {
     width: 100%;
   }
 
+  .avatar-name .avatar-picture img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+
   .avatar-name .avatar-picture {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 
   header .nav-title {
