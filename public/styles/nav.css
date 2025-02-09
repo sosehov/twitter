@@ -50,7 +50,7 @@ nav .toggle-tweet-form:hover {
 
 
 /* Mobile Styles */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 420px) {
   nav {
     flex-direction: column;
     align-items: center;
