@@ -59,11 +59,10 @@
   font-size: 14px;
 }
 
-
 /* Tablet Styles */
 @media only screen and (min-width: 768px) {
   .tweet-form {
-    width: 90%; 
+    width: 75%; 
     margin: 0 auto;
   }
 
@@ -71,7 +70,6 @@
     width: 150px;
   }
 }
-
 
 /* Desktop Styles */
 @media only screen and (min-width: 1024) {
