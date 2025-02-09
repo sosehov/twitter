@@ -57,7 +57,7 @@ nav .toggle-tweet-form:hover {
 /* Desktop Styles */
 @media only screen and (min-width: 1024px) {
   nav {
-    flex-direction: row; /* Align horizontally */
+    flex-direction: row;
     height: 120px;
   }
   .avatar-name .avatar-picture {
