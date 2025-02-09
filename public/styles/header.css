@@ -16,6 +16,11 @@
 
 header .toggle-tweet-form {
   color:#FFFFFF;
+  cursor: pointer;
+}
+
+header .toggle-tweet-form:hover {
+  text-decoration: underline;
 }
 
 .avatar-name {
