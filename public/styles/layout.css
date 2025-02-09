@@ -24,19 +24,10 @@ main {
   background-color: inherit;
 }
 
-
-/* Tablet Styles */
-@media only screen and (min-width: 768px) {
-  main {
-    width: 80%;
-  }
-}
-
 /* Desktop Styles */
 @media only screen and (min-width: 1024px) {
   main {
     width: 70%;
-    font-size: 18px;
     margin-left: 33.3%;
   }
 }
