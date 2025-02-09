@@ -22,7 +22,6 @@
   margin-bottom: 20px;
   width: 100%;
   max-width: 600 px;
-  box-sizing: border-box;
 }
 
 .tweet p {
@@ -67,8 +66,6 @@
   font-size: 16px;
   color: #555;
 }
-
-
 
 /* Tablet Styles */
 @media only screen and (min-width: 768px) {
